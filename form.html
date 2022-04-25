@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Form</title>
+</head>
+<body>
+	<h1>Submit the form</h1>
+	<form action="/action_page.php">
+		<fieldset>
+		<legend>Personalia:</legend>	
+		<label for="fname">First Name</label><br>
+		<input type="text" name="fname"><br>
+		<label for="lname">Last Name</label><br>
+		<input type="text" name="lname" ><br>
+			<br>
+		<button onclick="Submit">Submit</button>
+		<hr style="border:1px solid black;">	
+
+		<h2>Choose Your Favourite Language</h2>
+		<input type="radio" name="Favourite Language" value="HTML" id="html">
+		<label for="radio">HTML</label>
+		<br>
+		<input type="radio" name="Favourite Language" value="java" id="java">
+		<label for="radio">JAVA</label>
+		<br>
+		<input type="radio" name="Favourite Language" value="sql" id="sql">
+		<label for="radio">SQL</label>
+		<br>
+		<input type="Submit">
+		<hr style="border:1px solid black;">	
+
+
+		<h2>Choose Your Favourite Vehicle</h2>
+
+		<input type="checkbox" name="Vehicle1" value="Bike" id="Vehicle1">
+		<label for="Vehicle1">Bike</label>
+		<br>
+		<input type="checkbox" name="Vehicle" value="Car" id="Vehicle2">
+		<label for="Vehicle2">Car</label>
+		<br>
+		<input type="checkbox" name="Vehicle3" value="scooter" id="Vehicle3">
+		<label for="Vehicle3">Scooter</label><br>
+		<input type="Submit" name="Submit">
+
+		<hr style="border:1px solid black;">
+		<h2>Choose the cars</h2>
+		<label for="car">Choose a car</label>
+		<select id="car" name="car" size="2" multiple>
+			<option value="volvo">volvo</option>
+			<option value="BMW">BMW</option>
+			<option value="Audi">Audi</option>
+			<option value="skoda">Skoda</option>
+			
+		<br><input type="Submit">	
+		</select>
+		<hr style="border:1px solid black;">
+		<h2>Text Area</h2>
+			<textarea name="message" style="width:300px; height: 200px;" >The cat is playing in garden.
+			</textarea>
+			<br>
+			<input type="Submit">
+			<hr style="border:1px solid black;">
+			<h2>button element</h2>
+			<button type="button" onclick="alert('Hello World!')">Click here</button>
+			<hr>
+			<label for="quantity">Quantity</label>
+			<input type="number" name="quantity" id="quantity" min="0" max="50" value="30" step="10">
+			<input type="Submit">
+			<hr>
+			<label for="vol">Volume range between 0 to 50</label>
+			<input type="range" name="vol" id="vol" min="0" max="50">
+			<input type="Submit" name="Submit">
+
+			<hr>
+
+			<label for="phone">Enter the Phone Number</label>
+			<input type="tel" name="phone" id="phone" placeholder="1234-123-12" pattern="[0-9]{4}-[0-9]{3}-[0-9]{2}" required><br><br>
+			<small>Formate 1234-123-12</small><br><br>
+			<input type="Submit" name="Submit">
+			<hr>
+			<label for="appt">Set the time </label>
+			<input type="time" name="appt" id="appt"><br><br>
+			<input type="Submit" name="Submit">
+
+			<hr>
+			<label for="week">Set the time </label>
+			<input type="week" name="week" id="week"><br><br>
+			<input type="Submit" name="Submit">
+			<hr>
+			<label for="fname">First Name</label><br><br>
+			<input type="text" name="fname" id="fname" value="John" size="40" disabled><br><br>
+			<label for="pin">Pin</label><br><br>
+			<input type="pin" name="pin" maxlength="4" size="4">
+			<br><br>
+			<input type="Submit" name="Submit">
+			<hr>
+			<label for="files">Choose files</label>
+			<input type="file" name="files" id="files" multiple><br><br>
+			<input type="image" src="images/images.jpeg" alt="images" width="40" height="40">
+			<hr>
+			<h2>Choose the list</h2>
+			<input list="browser">
+			<datalist id="browser">Browser
+			<option value="Internet Explorer">
+			<option value="Crome">
+			<option value="Safari">	
+			<option value="Mozila"><br><br>	
+			</datalist>	
+			<input type="Submit" name="Submit">
+		</fieldset>
+	</form>
+</body>
+</html>

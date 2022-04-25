@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Css Template</title>
+
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		.left{
+			float: left;
+			padding: 20px;
+			width: 120px;
+			background-color: grey;
+		}
+		.main{
+			float: left;
+			padding: 20px;
+			width: 260px;
+			background-color: deepskyblue;
+		}
+		.right{
+			float: left;
+			padding: 20px;
+			width: 120px;
+			background-color: yellow;
+		}
+		@media screen and (max-width: 800px){
+			.left,.main,.right
+			{
+			width:100%;	
+			}
+		}
+	</style>
+
+
+
+</head>
+<body>
+	<h1>Media Queries</h1>
+	<p>Resize the browser window</p>
+
+	<div class="left">
+		<p>Left Menu</p>
+	</div>
+	<div class="Main">
+		<p>Main Menu</p>
+	</div>
+	<div class="right">
+		<p>Right Menu</p>
+	</div><br>
+
+	<p>Message for your computer</p><br>
+	<p>file not found<br> <samp>Press F1 to find</samp></p>
+
+	<pre>
+	<code>
+		
+		<kbd>x=5;</kbd>
+		y=6
+		z=x+y;
+	</code>
+	</pre>
+
+</body>
+</html>
